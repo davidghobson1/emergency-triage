@@ -1,4 +1,4 @@
-# Emergency Triage
+# Emergency Triage Project
 
 This project explores the undertriaging of seniors in ML applications of emergency triage, specifically in predicting admission and discharge as done in Hong et al.
 
