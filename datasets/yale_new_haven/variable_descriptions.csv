@@ -1,0 +1,973 @@
+Variable Category,Variable Name,Description,Variable Type
+Response Variable,disposition,admission (1)  vs discharge (0),Binary
+Demographics,age,age,Numeric
+Demographics,gender,gender,Binary
+Demographics,ethnicity,ethnicity,Categorical
+Demographics,race,race,Categorical
+Demographics,lang,patient's primary language (English vs. other),Binary
+Demographics,religion,religion,Categorical
+Demographics,maritalstatus,marital status,Categorical
+Demographics,employstatus,"full-time, part-time, student, unemployed, retired",Categorical
+Demographics,insurance_status,"commerical, medicaid, medicare, self-pay",Categorical
+Triage Variables,dep_name,"presenting hospital (recoded into A, B, C)",Categorical
+Triage Variables,arrivalmode,"amulance, walk-in, car, etc",Categorical
+Triage Variables,arrivalmonth,month of arrival (Jan-Dec),Categorical
+Triage Variables,arrivalday,day of arrival (Mon-Sun),Categorical
+Triage Variables,arrivalhour_bin,"hour of arrival, binned to 4-hour timeframes (23-02, 03-06, 7-10, etc)",Categorical
+Triage Variables,triage_vital_hr,systolic blood pressure recorded at triage,Numeric
+Triage Variables,triage_vital_sbp,diastolic blood pressure recorded at triage,Numeric
+Triage Variables,triage_vital_dbp,heart rate recorded at triage,Numeric
+Triage Variables,triage_vital_rr,respiratory rate recorded at triage,Numeric
+Triage Variables,triage_vital_o2,O2 saturation recorded at triage,Numeric
+Triage Variables,triage_vital_o2_device,presence of supplementary O2 device at triage,Binary
+Triage Variables,triage_vital_temp,temperature recorded at triage,Numeric
+Triage Variables,esi,ESI level determined by triage nurse,Categorical
+Hospital Usage,previousdispo,disposition of the patient's last visit to the ED,Categorical
+Hospital Usage,n_edvisits,number of ED visits within the past year,Numeric
+Hospital Usage,n_admissions,number of in-patient admissions within the past year,Numeric
+Hospital Usage,n_surgeries,number of surgeries and procedures within the past year,Numeric
+Chief Complaint,cc_abdominalcramping,abdominal cramping,Binary
+Chief Complaint,cc_abdominaldistention,abdominal distention,Binary
+Chief Complaint,cc_abdominalpain,abdominal pain,Binary
+Chief Complaint,cc_abdominalpainpregnant,abdominal pain pregnant,Binary
+Chief Complaint,cc_abnormallab,abnormal lab,Binary
+Chief Complaint,cc_abscess,abscess,Binary
+Chief Complaint,cc_addictionproblem,addiction problem,Binary
+Chief Complaint,cc_agitation,agitation,Binary
+Chief Complaint,cc_alcoholintoxication,alcohol intoxication,Binary
+Chief Complaint,cc_alcoholproblem,alcohol problem,Binary
+Chief Complaint,cc_allergicreaction,allergic reaction,Binary
+Chief Complaint,cc_alteredmentalstatus,altered mental status,Binary
+Chief Complaint,cc_animalbite,animal bite,Binary
+Chief Complaint,cc_ankleinjury,ankle injury,Binary
+Chief Complaint,cc_anklepain,ankle pain,Binary
+Chief Complaint,cc_anxiety,anxiety,Binary
+Chief Complaint,cc_arminjury,arm injury,Binary
+Chief Complaint,cc_armpain,arm pain,Binary
+Chief Complaint,cc_armswelling,arm swelling,Binary
+Chief Complaint,cc_assaultvictim,assault victim,Binary
+Chief Complaint,cc_asthma,asthma,Binary
+Chief Complaint,cc_backpain,back pain,Binary
+Chief Complaint,cc_bleeding/bruising,bleeding/bruising,Binary
+Chief Complaint,cc_blurredvision,blurred vision,Binary
+Chief Complaint,cc_bodyfluidexposure,body fluid exposure,Binary
+Chief Complaint,cc_breastpain,breast pain,Binary
+Chief Complaint,cc_breathingdifficulty,breathing difficulty,Binary
+Chief Complaint,cc_breathingproblem,breathing problem,Binary
+Chief Complaint,cc_burn,burn,Binary
+Chief Complaint,cc_cardiacarrest,cardiac arrest,Binary
+Chief Complaint,cc_cellulitis,cellulitis,Binary
+Chief Complaint,cc_chestpain,chest pain,Binary
+Chief Complaint,cc_chesttightness,chest tightness,Binary
+Chief Complaint,cc_chills,chills,Binary
+Chief Complaint,cc_coldlikesymptoms,cold like symptoms,Binary
+Chief Complaint,cc_confusion,confusion,Binary
+Chief Complaint,cc_conjunctivitis,conjunctivitis,Binary
+Chief Complaint,cc_constipation,constipation,Binary
+Chief Complaint,cc_cough,cough,Binary
+Chief Complaint,cc_cyst,cyst,Binary
+Chief Complaint,cc_decreasedbloodsugar-symptomatic,decreased blood sugar-symptomatic,Binary
+Chief Complaint,cc_dehydration,dehydration,Binary
+Chief Complaint,cc_dentalpain,dental pain,Binary
+Chief Complaint,cc_depression,depression,Binary
+Chief Complaint,cc_detoxevaluation,detox evaluation,Binary
+Chief Complaint,cc_diarrhea,diarrhea,Binary
+Chief Complaint,cc_dizziness,dizziness,Binary
+Chief Complaint,cc_drug/alcoholassessment,drug / alcohol assessment,Binary
+Chief Complaint,cc_drugproblem,drug problem,Binary
+Chief Complaint,cc_dyspnea,dyspnea,Binary
+Chief Complaint,cc_dysuria,dysuria,Binary
+Chief Complaint,cc_earpain,ear pain,Binary
+Chief Complaint,cc_earproblem,ear problem,Binary
+Chief Complaint,cc_edema,edema,Binary
+Chief Complaint,cc_elbowpain,elbow pain,Binary
+Chief Complaint,cc_elevatedbloodsugar-nosymptoms,elevated blood sugar-no symptoms,Binary
+Chief Complaint,cc_elevatedbloodsugar-symptomatic,elevated blood sugar-symptomatic,Binary
+Chief Complaint,cc_emesis,emesis,Binary
+Chief Complaint,cc_epigastricpain,epigastric pain,Binary
+Chief Complaint,cc_epistaxis,epistaxis,Binary
+Chief Complaint,cc_exposuretostd,exposure to std,Binary
+Chief Complaint,cc_extremitylaceration,extremity laceration,Binary
+Chief Complaint,cc_extremityweakness,extremity weakness,Binary
+Chief Complaint,cc_eyeinjury,eye injury,Binary
+Chief Complaint,cc_eyepain,eye pain,Binary
+Chief Complaint,cc_eyeproblem,eye problem,Binary
+Chief Complaint,cc_eyeredness,eye redness,Binary
+Chief Complaint,cc_facialinjury,facial injury,Binary
+Chief Complaint,cc_faciallaceration,facial laceration,Binary
+Chief Complaint,cc_facialpain,facial pain,Binary
+Chief Complaint,cc_facialswelling,facial swelling,Binary
+Chief Complaint,cc_fall,fall,Binary
+Chief Complaint,cc_fall>65,fall >65,Binary
+Chief Complaint,cc_fatigue,fatigue,Binary
+Chief Complaint,cc_femaleguproblem,female gu problem,Binary
+Chief Complaint,cc_fever,fever,Binary
+Chief Complaint,cc_fever-75yearsorolder,fever-75 years or older,Binary
+Chief Complaint,cc_fever-9weeksto74years,fever-9 weeks to 74 years,Binary
+Chief Complaint,cc_feverimmunocompromised,fever immunocompromised,Binary
+Chief Complaint,cc_fingerinjury,finger injury,Binary
+Chief Complaint,cc_fingerpain,finger pain,Binary
+Chief Complaint,cc_fingerswelling,finger swelling,Binary
+Chief Complaint,cc_flankpain,flank pain,Binary
+Chief Complaint,cc_follow-upcellulitis,follow-up cellulitis,Binary
+Chief Complaint,cc_footinjury,foot injury,Binary
+Chief Complaint,cc_footpain,foot pain,Binary
+Chief Complaint,cc_footswelling,foot swelling,Binary
+Chief Complaint,cc_foreignbodyineye,foreign body in eye,Binary
+Chief Complaint,cc_fulltrauma,full trauma,Binary
+Chief Complaint,cc_generalizedbodyaches,generalized body aches,Binary
+Chief Complaint,cc_gibleeding,gi bleeding,Binary
+Chief Complaint,cc_giproblem,gi problem,Binary
+Chief Complaint,cc_groinpain,groin pain,Binary
+Chief Complaint,cc_hallucinations,hallucinations,Binary
+Chief Complaint,cc_handinjury,hand injury,Binary
+Chief Complaint,cc_handpain,hand pain,Binary
+Chief Complaint,cc_headache,headache,Binary
+Chief Complaint,cc_headache-newonsetornewsymptoms,headache- new onset or new symptoms,Binary
+Chief Complaint,cc_headache-recurrentorknowndxmigraines,headache- recurrent or known dx migraines,Binary
+Chief Complaint,cc_headachere-evaluation,headache re-evaluation,Binary
+Chief Complaint,cc_headinjury,head injury,Binary
+Chief Complaint,cc_headlaceration,head laceration,Binary
+Chief Complaint,cc_hematuria,hematuria,Binary
+Chief Complaint,cc_hemoptysis,hemoptysis,Binary
+Chief Complaint,cc_hippain,hip pain,Binary
+Chief Complaint,cc_homicidal,homicidal,Binary
+Chief Complaint,cc_hyperglycemia,hyperglycemia,Binary
+Chief Complaint,cc_hypertension,hypertension,Binary
+Chief Complaint,cc_hypotension,hypotension,Binary
+Chief Complaint,cc_influenza,influenza,Binary
+Chief Complaint,cc_ingestion,ingestion,Binary
+Chief Complaint,cc_insectbite,insect bite,Binary
+Chief Complaint,cc_irregularheartbeat,irregular heart beat,Binary
+Chief Complaint,cc_jawpain,jaw pain,Binary
+Chief Complaint,cc_jointswelling,joint swelling,Binary
+Chief Complaint,cc_kneeinjury,knee injury,Binary
+Chief Complaint,cc_kneepain,knee pain,Binary
+Chief Complaint,cc_laceration,laceration,Binary
+Chief Complaint,cc_leginjury,leg injury,Binary
+Chief Complaint,cc_legpain,leg pain,Binary
+Chief Complaint,cc_legswelling,leg swelling,Binary
+Chief Complaint,cc_lethargy,lethargy,Binary
+Chief Complaint,cc_lossofconsciousness,loss of consciousness,Binary
+Chief Complaint,cc_maleguproblem,male gu problem,Binary
+Chief Complaint,cc_mass,mass,Binary
+Chief Complaint,cc_medicalproblem,medical problem,Binary
+Chief Complaint,cc_medicalscreening,medical screening,Binary
+Chief Complaint,cc_medicationproblem,medication problem,Binary
+Chief Complaint,cc_medicationrefill,medication refill,Binary
+Chief Complaint,cc_migraine,migraine,Binary
+Chief Complaint,cc_modifiedtrauma,modified trauma,Binary
+Chief Complaint,cc_motorcyclecrash,motor vehicle crash,Binary
+Chief Complaint,cc_motorvehiclecrash,motorcycle crash,Binary
+Chief Complaint,cc_multiplefalls,multiple falls,Binary
+Chief Complaint,cc_nasalcongestion,nasal congestion,Binary
+Chief Complaint,cc_nausea,nausea,Binary
+Chief Complaint,cc_nearsyncope,near syncope,Binary
+Chief Complaint,cc_neckpain,neck pain,Binary
+Chief Complaint,cc_neurologicproblem,neurologic problem,Binary
+Chief Complaint,cc_numbness,numbness,Binary
+Chief Complaint,cc_oralswelling,oral swelling,Binary
+Chief Complaint,cc_otalgia,otalgia,Binary
+Chief Complaint,cc_other,other,Binary
+Chief Complaint,cc_overdose-accidental,overdose- accidental,Binary
+Chief Complaint,cc_overdose-intentional,overdose- intentional,Binary
+Chief Complaint,cc_pain,pain,Binary
+Chief Complaint,cc_palpitations,palpitations,Binary
+Chief Complaint,cc_panicattack,panic attack,Binary
+Chief Complaint,cc_pelvicpain,pelvic pain,Binary
+Chief Complaint,cc_poisoning,poisoning,Binary
+Chief Complaint,cc_post-opproblem,post-op problem,Binary
+Chief Complaint,cc_psychiatricevaluation,psychiatric evaluation,Binary
+Chief Complaint,cc_psychoticsymptoms,psychotic symptoms,Binary
+Chief Complaint,cc_rapidheartrate,rapid heart rate,Binary
+Chief Complaint,cc_rash,rash,Binary
+Chief Complaint,cc_rectalbleeding,rectal bleeding,Binary
+Chief Complaint,cc_rectalpain,rectal pain,Binary
+Chief Complaint,cc_respiratorydistress,respiratory distress,Binary
+Chief Complaint,cc_ribinjury,rib injury,Binary
+Chief Complaint,cc_ribpain,rib pain,Binary
+Chief Complaint,cc_seizure-newonset,seizure- new onset,Binary
+Chief Complaint,cc_seizure-priorhxof,seizure- prior hx of,Binary
+Chief Complaint,cc_seizures,seizures,Binary
+Chief Complaint,cc_shortnessofbreath,shortness of breath,Binary
+Chief Complaint,cc_shoulderinjury,shoulder injury,Binary
+Chief Complaint,cc_shoulderpain,shoulder pain,Binary
+Chief Complaint,cc_sicklecellpain,sickle cell pain,Binary
+Chief Complaint,cc_sinusproblem,sinus problem,Binary
+Chief Complaint,cc_skinirritation,skin irritation,Binary
+Chief Complaint,cc_skinproblem,skin problem,Binary
+Chief Complaint,cc_sorethroat,sore throat,Binary
+Chief Complaint,cc_stdcheck,std check,Binary
+Chief Complaint,cc_strokealert,stroke alert,Binary
+Chief Complaint,cc_suicidal,suicidal,Binary
+Chief Complaint,cc_suture/stapleremoval,suture / staple removal,Binary
+Chief Complaint,cc_swallowedforeignbody,swallowed foreign body,Binary
+Chief Complaint,cc_syncope,syncope,Binary
+Chief Complaint,cc_tachycardia,tachycardia,Binary
+Chief Complaint,cc_testiclepain,testicle pain,Binary
+Chief Complaint,cc_thumbinjury,thumb injury,Binary
+Chief Complaint,cc_tickremoval,tick removal,Binary
+Chief Complaint,cc_toeinjury,toe injury,Binary
+Chief Complaint,cc_toepain,toe pain,Binary
+Chief Complaint,cc_trauma,trauma,Binary
+Chief Complaint,cc_unresponsive,unresponsive,Binary
+Chief Complaint,cc_uri,uri,Binary
+Chief Complaint,cc_urinaryfrequency,urinary frequency,Binary
+Chief Complaint,cc_urinaryretention,urinary retention,Binary
+Chief Complaint,cc_urinarytractinfection,urinary tract infection,Binary
+Chief Complaint,cc_vaginalbleeding,vaginal bleeding,Binary
+Chief Complaint,cc_vaginaldischarge,vaginal discharge,Binary
+Chief Complaint,cc_vaginalpain,vaginal pain,Binary
+Chief Complaint,cc_weakness,weakness,Binary
+Chief Complaint,cc_wheezing,wheezing,Binary
+Chief Complaint,cc_withdrawal-alcohol,withdrawal- alcohol,Binary
+Chief Complaint,cc_woundcheck,wound check,Binary
+Chief Complaint,cc_woundinfection,wound infection,Binary
+Chief Complaint,cc_woundre-evaluation,wound re-evaluation,Binary
+Chief Complaint,cc_wristinjury,wrist injury,Binary
+Chief Complaint,cc_wristpain,wrist pain,Binary
+Past Medical History,2ndarymalig,secondary malignancies,Binary
+Past Medical History,abdomhernia,abdominal hernia,Binary
+Past Medical History,abdomnlpain,abdominal pain,Binary
+Past Medical History,abortcompl,postabortion complications,Binary
+Past Medical History,acqfootdef,acquired foot deformities,Binary
+Past Medical History,acrenlfail,acute and unspecified renal failure,Binary
+Past Medical History,acutecvd,acute cerebrovascular disease,Binary
+Past Medical History,acutemi,acute myocardial infarction,Binary
+Past Medical History,acutphanm,acute posthemorrhagic anemia,Binary
+Past Medical History,adjustmentdisorders,adjustment disorders,Binary
+Past Medical History,adltrespfl,respiratory failure; insufficiency; arrest (adult),Binary
+Past Medical History,alcoholrelateddisorders,alcohol-related disorders,Binary
+Past Medical History,allergy,allergic reactions,Binary
+Past Medical History,amniosdx,polyhydramnios and other problems of amniotic cavity,Binary
+Past Medical History,analrectal,anal and rectal conditions,Binary
+Past Medical History,anemia,deficiency and other anemia,Binary
+Past Medical History,aneurysm,aortic; peripheral; and visceral artery aneurysms,Binary
+Past Medical History,anxietydisorders,anxiety disorders,Binary
+Past Medical History,appendicitis,appendicitis and other appendiceal conditions,Binary
+Past Medical History,artembolism,aortic and peripheral arterial embolism or thrombosis,Binary
+Past Medical History,asppneumon,aspiration pneumonitis; food/vomitus,Binary
+Past Medical History,asthma,asthma,Binary
+Past Medical History,attentiondeficitconductdisruptivebeha,"attention-deficit, conduct, and disruptive behavior disorders",Binary
+Past Medical History,backproblem,spondylosis; intervertebral disc disorders; other back problems,Binary
+Past Medical History,biliarydx,biliary tract disease,Binary
+Past Medical History,birthasphyx,intrauterine hypoxia and birth asphyxia,Binary
+Past Medical History,birthtrauma,birth trauma,Binary
+Past Medical History,bladdercncr,cancer of bladder,Binary
+Past Medical History,blindness,blindness and vision defects,Binary
+Past Medical History,bnignutneo,benign neoplasm of uterus,Binary
+Past Medical History,bonectcncr,cancer of bone and connective tissue,Binary
+Past Medical History,bph,hyperplasia of prostate,Binary
+Past Medical History,brainnscan,cancer of brain and nervous system,Binary
+Past Medical History,breastcancr,cancer of breast,Binary
+Past Medical History,breastdx,nonmalignant breast conditions,Binary
+Past Medical History,brnchlngca,cancer of bronchus; lung,Binary
+Past Medical History,bronchitis,acute bronchitis,Binary
+Past Medical History,burns,burns,Binary
+Past Medical History,cardiaarrst,cardiac arrest and ventricular fibrillation,Binary
+Past Medical History,cardiacanom,cardiac and circulatory congenital anomalies,Binary
+Past Medical History,carditis,peri-; endo-; and myocarditis; cardiomyopathy (except that caused by tuberculosis or sexually transmitted disease),Binary
+Past Medical History,cataract,cataract,Binary
+Past Medical History,cervixcancr,cancer of cervix,Binary
+Past Medical History,chestpain,nonspecific chest pain,Binary
+Past Medical History,chfnonhp,congestive heart failure; nonhypertensive,Binary
+Past Medical History,chrkidneydisease,chronic kidney disease,Binary
+Past Medical History,coaghemrdx,coagulation and hemorrhagic disorders,Binary
+Past Medical History,coloncancer,cancer of colon,Binary
+Past Medical History,comabrndmg,coma; stupor; and brain damage,Binary
+Past Medical History,complicdevi,complication of device; implant or graft,Binary
+Past Medical History,complicproc,complications of surgical procedures or medical care,Binary
+Past Medical History,conduction,conduction disorders,Binary
+Past Medical History,contraceptiv,contraceptive and procreative management,Binary
+Past Medical History,copd,chronic obstructive pulmonary disease and bronchiectasis,Binary
+Past Medical History,coronathero,coronary atherosclerosis and other heart disease,Binary
+Past Medical History,crushinjury,crushing injury or internal injury,Binary
+Past Medical History,cysticfibro,cystic fibrosis,Binary
+Past Medical History,deliriumdementiaamnesticothercognitiv,"delirium, dementia, and amnestic and other cognitive disorders",Binary
+Past Medical History,developmentaldisorders,developmental disorders,Binary
+Past Medical History,diabmelnoc,diabetes mellitus without complication,Binary
+Past Medical History,diabmelwcm,diabetes mellitus with complications,Binary
+Past Medical History,disordersusuallydiagnosedininfancych,"disorders usually diagnosed in infancy, childhood, or adolescence",Binary
+Past Medical History,diverticulos,diverticulosis and diverticulitis,Binary
+Past Medical History,dizziness,conditions associated with dizziness or vertigo,Binary
+Past Medical History,dminpreg,diabetes or abnormal glucose tolerance complicating pregnancy; childbirth; or the puerperium,Binary
+Past Medical History,dysrhythmia,cardiac dysrhythmias,Binary
+Past Medical History,earlylabor,early or threatened labor,Binary
+Past Medical History,ecodesadverseeffectsofmedicalcare,e codes: adverse effects of medical care,Binary
+Past Medical History,ecodesadverseeffectsofmedicaldrugs,e codes: adverse effects of medical drugs,Binary
+Past Medical History,ecodescutpierce,e codes: cut/pierceb,Binary
+Past Medical History,ecodesdrowningsubmersion,e codes: drowning/submersion,Binary
+Past Medical History,ecodesfall,e codes: fall,Binary
+Past Medical History,ecodesfirearm,e codes: firearm,Binary
+Past Medical History,ecodesfireburn,e codes: fire/burn,Binary
+Past Medical History,ecodesmachinery,e codes: machinery,Binary
+Past Medical History,ecodesmotorvehicletrafficmvt,e codes: motor vehicle traffic (mvt),Binary
+Past Medical History,ecodesnaturalenvironment,e codes: natural/environment,Binary
+Past Medical History,ecodesotherspecifiedandclassifiable,e codes: other specified and classifiable,Binary
+Past Medical History,ecodesotherspecifiednec,e codes: other specified; nec,Binary
+Past Medical History,ecodespedalcyclistnotmvt,e codes: pedal cyclist; not mvt,Binary
+Past Medical History,ecodesplaceofoccurrence,e codes: place of occurrence,Binary
+Past Medical History,ecodespoisoning,e codes: poisoning,Binary
+Past Medical History,ecodesstruckbyagainst,e codes: struck by; against,Binary
+Past Medical History,ecodessuffocation,e codes: suffocation,Binary
+Past Medical History,ecodestransportnotmvt,e codes: transport; not mvt,Binary
+Past Medical History,ecodesunspecified,e codes: unspecified,Binary
+Past Medical History,ectopicpreg,ectopic pregnancy,Binary
+Past Medical History,encephalitis,encephalitis (except that caused by tuberculosis or sexually transmitted disease),Binary
+Past Medical History,endometrios,endometriosis,Binary
+Past Medical History,epilepsycnv,epilepsy; convulsions,Binary
+Past Medical History,esophcancer,cancer of esophagus,Binary
+Past Medical History,esophgealdx,esophageal disorders,Binary
+Past Medical History,exameval,medical examination/evaluation,Binary
+Past Medical History,eyeinfectn,inflammation; infection of eye (except that caused by tuberculosis or sexually transmitteddisease),Binary
+Past Medical History,fatigue,malaise and fatigue,Binary
+Past Medical History,femgenitca,cancer of other female genital organs,Binary
+Past Medical History,feminfertil,female infertility,Binary
+Past Medical History,fetaldistrs,fetal distress and abnormal forces of labor,Binary
+Past Medical History,fluidelcdx,fluid and electrolyte disorders,Binary
+Past Medical History,fuo,fever of unknown origin,Binary
+Past Medical History,fxarm,fracture of upper limb,Binary
+Past Medical History,fxhip,fracture of neck of femur (hip),Binary
+Past Medical History,fxleg,fracture of lower limb,Binary
+Past Medical History,fxskullfac,skull and face fractures,Binary
+Past Medical History,gangrene,gangrene,Binary
+Past Medical History,gasduoulcer,gastroduodenal ulcer (except hemorrhage),Binary
+Past Medical History,gastritis,gastritis and duodenitis,Binary
+Past Medical History,gastroent,noninfectious gastroenteritis,Binary
+Past Medical History,giconganom,digestive congenital anomalies,Binary
+Past Medical History,gihemorrhag,gastrointestinal hemorrhage,Binary
+Past Medical History,giperitcan,cancer of other gi organs; peritoneum,Binary
+Past Medical History,glaucoma,glaucoma,Binary
+Past Medical History,goutotcrys,gout and other crystal arthropathies,Binary
+Past Medical History,guconganom,genitourinary congenital anomalies,Binary
+Past Medical History,hdnckcancr,cancer of head and neck,Binary
+Past Medical History,headachemig,headache; including migraine,Binary
+Past Medical History,hemmorhoids,hemorrhoids,Binary
+Past Medical History,hemorrpreg,hemorrhage during pregnancy; abruptio placenta; placenta previa,Binary
+Past Medical History,hepatitis,hepatitis,Binary
+Past Medical History,hivinfectn,hiv infection,Binary
+Past Medical History,hodgkinsds,hodgkin`s disease,Binary
+Past Medical History,hrtvalvedx,heart valve disorders,Binary
+Past Medical History,htn,essential hypertension,Binary
+Past Medical History,htncomplicn,hypertension with complications and secondary hypertension,Binary
+Past Medical History,htninpreg,hypertension complicating pregnancy; childbirth and the puerperium,Binary
+Past Medical History,hyperlipidem,disorders of lipid metabolism,Binary
+Past Medical History,immunitydx,immunity disorders,Binary
+Past Medical History,immunizscrn,immunizations and screening for infectious disease,Binary
+Past Medical History,impulsecontroldisordersnec,"impulse control disorders, nec",Binary
+Past Medical History,inducabortn,induced abortion,Binary
+Past Medical History,infectarth,infective arthritis and osteomyelitis (except that caused by tuberculosis or sexually transmitted disease),Binary
+Past Medical History,influenza,influenza,Binary
+Past Medical History,infmalegen,inflammatory conditions of male genital organs,Binary
+Past Medical History,intestinfct,intestinal infection,Binary
+Past Medical History,intobstruct,intestinal obstruction without hernia,Binary
+Past Medical History,intracrninj,intracranial injury,Binary
+Past Medical History,jointinjury,joint disorders and dislocations; trauma-related,Binary
+Past Medical History,kidnyrnlca,cancer of kidney and renal pelvis,Binary
+Past Medical History,lateeffcvd,late effects of cerebrovascular disease,Binary
+Past Medical History,leukemias,leukemias,Binary
+Past Medical History,liveborn,liveborn,Binary
+Past Medical History,liveribdca,cancer of liver and intrahepatic bile duct,Binary
+Past Medical History,longpregncy,prolonged pregnancy,Binary
+Past Medical History,lowbirthwt,short gestation; low birth weight; and fetal growth retardation,Binary
+Past Medical History,lungexternl,lung disease due to external agents,Binary
+Past Medical History,lymphenlarg,lymphadenitis,Binary
+Past Medical History,maintchemr,maintenance chemotherapy; radiotherapy,Binary
+Past Medical History,malgenitca,cancer of other male genital organs,Binary
+Past Medical History,maligneopls,malignant neoplasm without specification of site,Binary
+Past Medical History,malposition,malposition; malpresentation,Binary
+Past Medical History,meningitis,meningitis (except that caused by tuberculosis or sexually transmitted disease),Binary
+Past Medical History,menopausldx,menopausal disorders,Binary
+Past Medical History,menstrualdx,menstrual disorders,Binary
+Past Medical History,miscellaneousmentalhealthdisorders,miscellaneous mental health disorders,Binary
+Past Medical History,mooddisorders,mood disorders,Binary
+Past Medical History,mouthdx,diseases of mouth; excluding dental,Binary
+Past Medical History,ms,multiple sclerosis,Binary
+Past Medical History,multmyeloma,multiple myeloma,Binary
+Past Medical History,mycoses,mycoses,Binary
+Past Medical History,nauseavomit,nausea and vomiting,Binary
+Past Medical History,neoplsmunsp,neoplasms of unspecified nature or uncertain behavior,Binary
+Past Medical History,nephritis,nephritis; nephrosis; renal sclerosis,Binary
+Past Medical History,nervcongan,nervous system congenital anomalies,Binary
+Past Medical History,nonepithca,other non-epithelial cancer of skin,Binary
+Past Medical History,nonhodglym,non-hodgkin`s lymphoma,Binary
+Past Medical History,nutritdefic,nutritional deficiencies,Binary
+Past Medical History,obrelatedperintrauma,ob-related trauma to perineum and vulva,Binary
+Past Medical History,opnwndextr,open wounds of extremities,Binary
+Past Medical History,opnwndhead,open wounds of head; neck; and trunk,Binary
+Past Medical History,osteoarthros,osteoarthritis,Binary
+Past Medical History,osteoporosis,osteoporosis,Binary
+Past Medical History,otacqdefor,other acquired deformities,Binary
+Past Medical History,otaftercare,other aftercare,Binary
+Past Medical History,otbnignneo,other and unspecified benign neoplasm,Binary
+Past Medical History,otbonedx,other bone disease and musculoskeletal deformities,Binary
+Past Medical History,otcirculdx,other circulatory disease,Binary
+Past Medical History,otcomplbir,other complications of birth; puerperium affecting management of mother,Binary
+Past Medical History,otconganom,other congenital anomalies,Binary
+Past Medical History,otconntiss,other connective tissue disease,Binary
+Past Medical History,otdxbladdr,other diseases of bladder and urethra,Binary
+Past Medical History,otdxkidney,other diseases of kidney and ureters,Binary
+Past Medical History,otdxstomch,other disorders of stomach and duodenum,Binary
+Past Medical History,otendodsor,other endocrine disorders,Binary
+Past Medical History,otfemalgen,other female genital disorders,Binary
+Past Medical History,othbactinf,bacterial infection; unspecified site,Binary
+Past Medical History,othcnsinfx,other cns infection and poliomyelitis,Binary
+Past Medical History,othematldx,other hematologic conditions,Binary
+Past Medical History,othercvd,other and ill-defined cerebrovascular disease,Binary
+Past Medical History,othereardx,other ear and sense organ disorders,Binary
+Past Medical History,otheredcns,other hereditary and degenerative nervous system conditions,Binary
+Past Medical History,othereyedx,other eye disorders,Binary
+Past Medical History,othergidx,other gastrointestinal disorders,Binary
+Past Medical History,othergudx,genitourinary symptoms and ill-defined conditions,Binary
+Past Medical History,otherinjury,other injuries and conditions due to external causes,Binary
+Past Medical History,otherpregnancyanddeliveryincludingnormal,other pregnancy and delivery including normal,Binary
+Past Medical History,otherscreen,other screening for suspected conditions (not mental disorders or infectious disease),Binary
+Past Medical History,othfracture,other fractures,Binary
+Past Medical History,othheartdx,other and ill-defined heart disease,Binary
+Past Medical History,othinfectns,other infections; including parasitic,Binary
+Past Medical History,othliverdx,other liver diseases,Binary
+Past Medical History,othlowresp,other lower respiratory disease,Binary
+Past Medical History,othmalegen,other male genital disorders,Binary
+Past Medical History,othnervdx,other nervous system disorders,Binary
+Past Medical History,othskindx,other skin disorders,Binary
+Past Medical History,othveindx,other diseases of veins and lymphatics,Binary
+Past Medical History,otinflskin,other inflammatory condition of skin,Binary
+Past Medical History,otitismedia,otitis media and related conditions,Binary
+Past Medical History,otjointdx,other non-traumatic joint disorders,Binary
+Past Medical History,otnutritdx,other nutritional; endocrine; and metabolic disorders,Binary
+Past Medical History,otperintdx,other perinatal conditions,Binary
+Past Medical History,otpregcomp,other complications of pregnancy,Binary
+Past Medical History,otprimryca,cancer; other and unspecified primary,Binary
+Past Medical History,otrespirca,cancer; other respiratory and intrathoracic,Binary
+Past Medical History,otupprresp,other upper respiratory disease,Binary
+Past Medical History,otuprspin,other upper respiratory infections,Binary
+Past Medical History,ovariancyst,ovarian cyst,Binary
+Past Medical History,ovarycancer,cancer of ovary,Binary
+Past Medical History,pancreascan,cancer of pancreas,Binary
+Past Medical History,pancreasdx,pancreatic disorders (not diabetes),Binary
+Past Medical History,paralysis,paralysis,Binary
+Past Medical History,parkinsons,parkinson`s disease,Binary
+Past Medical History,pathologfx,pathological fracture,Binary
+Past Medical History,pelvicobstr,fetopelvic disproportion; obstruction,Binary
+Past Medical History,perintjaund,hemolytic jaundice and perinatal jaundice,Binary
+Past Medical History,peripathero,peripheral and visceral atherosclerosis,Binary
+Past Medical History,peritonitis,peritonitis and intestinal abscess,Binary
+Past Medical History,personalitydisorders,personality disorders,Binary
+Past Medical History,phlebitis,phlebitis; thrombophlebitis and thromboembolism,Binary
+Past Medical History,pid,inflammatory diseases of female pelvic organs,Binary
+Past Medical History,pleurisy,pleurisy; pneumothorax; pulmonary collapse,Binary
+Past Medical History,pneumonia,pneumonia (except that caused by tuberculosis or sexually transmitted disease),Binary
+Past Medical History,poisnnonmed,poisoning by nonmedicinal substances,Binary
+Past Medical History,poisnotmed,poisoning by other medications and drugs,Binary
+Past Medical History,poisonpsych,poisoning by psychotropic agents,Binary
+Past Medical History,precereoccl,occlusion or stenosis of precerebral arteries,Binary
+Past Medical History,prevcsectn,previous c-section,Binary
+Past Medical History,prolapse,prolapse of female genital organs,Binary
+Past Medical History,prostatecan,cancer of prostate,Binary
+Past Medical History,pulmhartdx,pulmonary heart disease,Binary
+Past Medical History,rctmanusca,cancer of rectum and anus,Binary
+Past Medical History,rehab,rehabilitation care; fitting of prostheses; and adjustment of devices,Binary
+Past Medical History,respdistres,respiratory distress syndrome,Binary
+Past Medical History,retinaldx,retinal detachments; defects; vascular occlusion; and retinopathy,Binary
+Past Medical History,rheumarth,rheumatoid arthritis and related disease,Binary
+Past Medical History,schizophreniaandotherpsychoticdisorde,schizophrenia and other psychotic disorders,Binary
+Past Medical History,screeningandhistoryofmentalhealthan,screening and history of mental health and substance abuse codes,Binary
+Past Medical History,septicemia,septicemia,Binary
+Past Medical History,septicemiaexceptinlabor,septicemia (except in labor),Binary
+Past Medical History,sexualinfxs,sexually transmitted infections (not hiv or hepatitis),Binary
+Past Medical History,shock,shock,Binary
+Past Medical History,sicklecell,sickle cell anemia,Binary
+Past Medical History,skininfectn,skin and subcutaneous tissue infections,Binary
+Past Medical History,skinmelanom,melanomas of skin,Binary
+Past Medical History,sle,systemic lupus erythematosus and connective tissue disorders,Binary
+Past Medical History,socialadmin,administrative/social admission,Binary
+Past Medical History,spincorinj,spinal cord injury,Binary
+Past Medical History,spontabortn,spontaneous abortion,Binary
+Past Medical History,sprain,sprains and strains,Binary
+Past Medical History,stomchcancr,cancer of stomach,Binary
+Past Medical History,substancerelateddisorders,substance-related disorders,Binary
+Past Medical History,suicideandintentionalselfinflictedin,suicide and intentional self-inflicted injury,Binary
+Past Medical History,superficinj,superficial injury; contusion,Binary
+Past Medical History,syncope,syncope,Binary
+Past Medical History,teethdx,disorders of teeth and jaw,Binary
+Past Medical History,testiscancr,cancer of testis,Binary
+Past Medical History,thyroidcncr,cancer of thyroid,Binary
+Past Medical History,thyroiddsor,thyroid disorders,Binary
+Past Medical History,tia,transient cerebral ischemia,Binary
+Past Medical History,tonsillitis,acute and chronic tonsillitis,Binary
+Past Medical History,tuberculosis,tuberculosis,Binary
+Past Medical History,ulceratcol,regional enteritis and ulcerative colitis,Binary
+Past Medical History,ulcerskin,chronic ulcer of skin,Binary
+Past Medical History,umbilcord,umbilical cord complication,Binary
+Past Medical History,unclassified,residual codes; unclassified,Binary
+Past Medical History,urinstone,calculus of urinary tract,Binary
+Past Medical History,urinyorgca,cancer of other urinary organs,Binary
+Past Medical History,uteruscancr,cancer of uterus,Binary
+Past Medical History,uti,urinary tract infections,Binary
+Past Medical History,varicosevn,varicose veins of lower extremity,Binary
+Past Medical History,viralinfect,viral infection,Binary
+Past Medical History,whtblooddx,diseases of white blood cells,Binary
+Outpatient Medications,meds_analgesicandantihistaminecombination,Outpatient medications: Number of analgesic and antihistamine combination,Numeric
+Outpatient Medications,meds_analgesics,Outpatient medications: Number of analgesics,Numeric
+Outpatient Medications,meds_anesthetics,Outpatient medications: Number of anesthetics,Numeric
+Outpatient Medications,meds_anti-obesitydrugs,Outpatient medications: Number of anti-obesity drugs,Numeric
+Outpatient Medications,meds_antiallergy,Outpatient medications: Number of antiallergy,Numeric
+Outpatient Medications,meds_antiarthritics,Outpatient medications: Number of antiarthritics,Numeric
+Outpatient Medications,meds_antiasthmatics,Outpatient medications: Number of antiasthmatics,Numeric
+Outpatient Medications,meds_antibiotics,Outpatient medications: Number of antibiotics,Numeric
+Outpatient Medications,meds_anticoagulants,Outpatient medications: Number of anticoagulants,Numeric
+Outpatient Medications,meds_antidotes,Outpatient medications: Number of antidotes,Numeric
+Outpatient Medications,meds_antifungals,Outpatient medications: Number of antifungals,Numeric
+Outpatient Medications,meds_antihistamineanddecongestantcombination,Outpatient medications: Number of antihistamine and decongestant combination,Numeric
+Outpatient Medications,meds_antihistamines,Outpatient medications: Number of antihistamines,Numeric
+Outpatient Medications,meds_antihyperglycemics,Outpatient medications: Number of antihyperglycemics,Numeric
+Outpatient Medications,meds_antiinfectives,Outpatient medications: Number of antiinfectives,Numeric
+Outpatient Medications,meds_antiinfectives/miscellaneous,Outpatient medications: Number of antiinfectives/miscellaneous,Numeric
+Outpatient Medications,meds_antineoplastics,Outpatient medications: Number of antineoplastics,Numeric
+Outpatient Medications,meds_antiparkinsondrugs,Outpatient medications: Number of antiparkinson drugs,Numeric
+Outpatient Medications,meds_antiplateletdrugs,Outpatient medications: Number of antiplatelet drugs,Numeric
+Outpatient Medications,meds_antivirals,Outpatient medications: Number of antivirals,Numeric
+Outpatient Medications,meds_autonomicdrugs,Outpatient medications: Number of autonomic drugs,Numeric
+Outpatient Medications,meds_biologicals,Outpatient medications: Number of biologicals,Numeric
+Outpatient Medications,meds_blood,Outpatient medications: Number of blood,Numeric
+Outpatient Medications,meds_cardiacdrugs,Outpatient medications: Number of cardiac drugs,Numeric
+Outpatient Medications,meds_cardiovascular,Outpatient medications: Number of cardiovascular,Numeric
+Outpatient Medications,meds_cnsdrugs,Outpatient medications: Number of cns drugs,Numeric
+Outpatient Medications,meds_colonystimulatingfactors,Outpatient medications: Number of colony stimulating factors,Numeric
+Outpatient Medications,meds_contraceptives,Outpatient medications: Number of contraceptives,Numeric
+Outpatient Medications,meds_cough/coldpreparations,Outpatient medications: Number of cough/cold preparations,Numeric
+Outpatient Medications,meds_diagnostic,Outpatient medications: Number of diagnostic,Numeric
+Outpatient Medications,meds_diuretics,Outpatient medications: Number of diuretics,Numeric
+Outpatient Medications,meds_eentpreps,Outpatient medications: Number of eent preps,Numeric
+Outpatient Medications,meds_elect/caloric/h2o,Outpatient medications: Number of elect/caloric/h2o,Numeric
+Outpatient Medications,meds_gastrointestinal,Outpatient medications: Number of gastrointestinal,Numeric
+Outpatient Medications,meds_herbals,Outpatient medications: Number of herbals,Numeric
+Outpatient Medications,meds_hormones,Outpatient medications: Number of hormones,Numeric
+Outpatient Medications,meds_immunosuppressants,Outpatient medications: Number of immunosuppressants,Numeric
+Outpatient Medications,meds_investigational,Outpatient medications: Number of investigational,Numeric
+Outpatient Medications,"meds_miscellaneousmedicalsupplies,devices,non-drug","Outpatient medications: Number of miscellaneous medical supplies, devices, non-drug",Numeric
+Outpatient Medications,meds_musclerelaxants,Outpatient medications: Number of muscle relaxants,Numeric
+Outpatient Medications,meds_pre-natalvitamins,Outpatient medications: Number of pre-natal vitamins,Numeric
+Outpatient Medications,meds_psychotherapeuticdrugs,Outpatient medications: Number of psychotherapeutic drugs,Numeric
+Outpatient Medications,meds_sedative/hypnotics,Outpatient medications: Number of sedative/hypnotics,Numeric
+Outpatient Medications,meds_skinpreps,Outpatient medications: Number of skin preps,Numeric
+Outpatient Medications,meds_smokingdeterrents,Outpatient medications: Number of smoking deterrents,Numeric
+Outpatient Medications,meds_thyroidpreps,Outpatient medications: Number of thyroid preps,Numeric
+Outpatient Medications,meds_unclassifieddrugproducts,Outpatient medications: Number of unclassified drug products,Numeric
+Outpatient Medications,meds_vitamins,Outpatient medications: Number of vitamins,Numeric
+Imaging,cxr_count,number of CXR ordered in the ED within the past year,Numeric
+Imaging,echo_count,number of echocardiogram ordered in the ED within the past year,Numeric
+Imaging,ekg_count,number of EKG ordered in the ED within the past year,Numeric
+Imaging,headct_count,number of head CT ordered in the ED within the past year,Numeric
+Imaging,mri_count,number of MRI ordered in the ED within the past year,Numeric
+Imaging,otherct_count,number of other CT (excluding head CT) ordered in the ED within the past year,Numeric
+Imaging,otherimg_count,number of other imaging modalities ordered in the ED within the past year,Numeric
+Imaging,otherus_count,number of ultrasounds (non-echo) ordered in the ED within the past year,Numeric
+Imaging,otherxr_count,number of echocardiogram ordered in the ED within the past year,Numeric
+Historical Vitals,pulse_last,"The last, min, max, and the median recorded value of all vitals taken in the ED within one year of the current visit ",Numeric
+Historical Vitals,resp_last,,Numeric
+Historical Vitals,spo2_last,,Numeric
+Historical Vitals,temp_last,,Numeric
+Historical Vitals,sbp_last,,Numeric
+Historical Vitals,dbp_last,,Numeric
+Historical Vitals,o2_device_last,,Binary
+Historical Vitals,pulse_min,,Numeric
+Historical Vitals,resp_min,,Numeric
+Historical Vitals,spo2_min,,Numeric
+Historical Vitals,temp_min,,Numeric
+Historical Vitals,sbp_min,,Numeric
+Historical Vitals,dbp_min,,Numeric
+Historical Vitals,o2_device_min,,Binary
+Historical Vitals,pulse_max,,Numeric
+Historical Vitals,resp_max,,Numeric
+Historical Vitals,spo2_max,,Numeric
+Historical Vitals,temp_max,,Numeric
+Historical Vitals,sbp_max,,Numeric
+Historical Vitals,dbp_max,,Numeric
+Historical Vitals,o2_device_max,,Binary
+Historical Vitals,pulse_median,,Numeric
+Historical Vitals,resp_median,,Numeric
+Historical Vitals,spo2_median,,Numeric
+Historical Vitals,temp_median,,Numeric
+Historical Vitals,sbp_median,,Numeric
+Historical Vitals,dbp_median,,Numeric
+Historical Vitals,o2_device_median,,Binary
+Historical Labs (Numeric),absolutelymphocytecount_last,"The last, min, max, and the median recorded value of selected numeric labs ordered in the ED within one year of the current visit ",Numeric
+Historical Labs (Numeric),acetonebld_last,,Numeric
+Historical Labs (Numeric),alanineaminotransferase(alt)_last,,Numeric
+Historical Labs (Numeric),albumin_last,,Numeric
+Historical Labs (Numeric),alkphos_last,,Numeric
+Historical Labs (Numeric),anc(absneutrophilcount)_last,,Numeric
+Historical Labs (Numeric),aniongap_last,,Numeric
+Historical Labs (Numeric),aspartateaminotransferase(ast)_last,,Numeric
+Historical Labs (Numeric),"b-typenatriureticpeptide,pro(probnp)_last",,Numeric
+Historical Labs (Numeric),baseexcess(poc)_last,,Numeric
+Historical Labs (Numeric),"baseexcess,venous(poc)_last",,Numeric
+Historical Labs (Numeric),basos_last,,Numeric
+Historical Labs (Numeric),basosabs_last,,Numeric
+Historical Labs (Numeric),"benzodiazepinesscreen,urine,noconf._last",,Numeric
+Historical Labs (Numeric),bilirubindirect_last,,Numeric
+Historical Labs (Numeric),bilirubintotal_last,,Numeric
+Historical Labs (Numeric),bun_last,,Numeric
+Historical Labs (Numeric),bun/creatratio_last,,Numeric
+Historical Labs (Numeric),calcium_last,,Numeric
+Historical Labs (Numeric),calculatedco2(poc)_last,,Numeric
+Historical Labs (Numeric),calculatedhco3(poc)i_last,,Numeric
+Historical Labs (Numeric),calculatedo2saturation(poc)_last,,Numeric
+Historical Labs (Numeric),chloride_last,,Numeric
+Historical Labs (Numeric),cktotal_last,,Numeric
+Historical Labs (Numeric),co2_last,,Numeric
+Historical Labs (Numeric),"co2calculated,venous(poc)_last",,Numeric
+Historical Labs (Numeric),"co2,poc_last",,Numeric
+Historical Labs (Numeric),creatinine_last,,Numeric
+Historical Labs (Numeric),d-dimer_last,,Numeric
+Historical Labs (Numeric),egfr_last,,Numeric
+Historical Labs (Numeric),egfr(nonafricanamerican)_last,,Numeric
+Historical Labs (Numeric),egfr(aframer)_last,,Numeric
+Historical Labs (Numeric),eos_last,,Numeric
+Historical Labs (Numeric),eosinoabs_last,,Numeric
+Historical Labs (Numeric),epithelialcells_last,,Numeric
+Historical Labs (Numeric),globulin_last,,Numeric
+Historical Labs (Numeric),glucose_last,,Numeric
+Historical Labs (Numeric),"glucose,meter_last",,Numeric
+Historical Labs (Numeric),"hco3calculated,venous(poc)_last",,Numeric
+Historical Labs (Numeric),hematocrit_last,,Numeric
+Historical Labs (Numeric),hemoglobin_last,,Numeric
+Historical Labs (Numeric),immaturegrans(abs)_last,,Numeric
+Historical Labs (Numeric),immaturegranulocytes_last,,Numeric
+Historical Labs (Numeric),inr_last,,Numeric
+Historical Labs (Numeric),"lactate,poc_last",,Numeric
+Historical Labs (Numeric),lipase_last,,Numeric
+Historical Labs (Numeric),lymphs_last,,Numeric
+Historical Labs (Numeric),magnesium_last,,Numeric
+Historical Labs (Numeric),mch_last,,Numeric
+Historical Labs (Numeric),mchc_last,,Numeric
+Historical Labs (Numeric),mcv_last,,Numeric
+Historical Labs (Numeric),monocytes_last,,Numeric
+Historical Labs (Numeric),monosabs_last,,Numeric
+Historical Labs (Numeric),mpv_last,,Numeric
+Historical Labs (Numeric),neutrophils_last,,Numeric
+Historical Labs (Numeric),nrbc_last,,Numeric
+Historical Labs (Numeric),nrbcabsolute_last,,Numeric
+Historical Labs (Numeric),"o2satcalculated,venous(poc)_last",,Numeric
+Historical Labs (Numeric),pco2(poc)_last,,Numeric
+Historical Labs (Numeric),"pco2,venous(poc)_last",,Numeric
+Historical Labs (Numeric),"ph,venous(poc)_last",,Numeric
+Historical Labs (Numeric),"phencyclidine(pcp)screen,urine,noconf._last",,Numeric
+Historical Labs (Numeric),phosphorus_last,,Numeric
+Historical Labs (Numeric),platelets_last,,Numeric
+Historical Labs (Numeric),po2(poc)_last,,Numeric
+Historical Labs (Numeric),"po2,venous(poc)_last",,Numeric
+Historical Labs (Numeric),pocbun_last,,Numeric
+Historical Labs (Numeric),poccreatinine_last,,Numeric
+Historical Labs (Numeric),pocglucose_last,,Numeric
+Historical Labs (Numeric),pochematocrit_last,,Numeric
+Historical Labs (Numeric),pocionizedcalcium_last,,Numeric
+Historical Labs (Numeric),pocph_last,,Numeric
+Historical Labs (Numeric),pocpotassium_last,,Numeric
+Historical Labs (Numeric),pocsodium_last,,Numeric
+Historical Labs (Numeric),poctroponini._last,,Numeric
+Historical Labs (Numeric),potassium_last,,Numeric
+Historical Labs (Numeric),proteintotal_last,,Numeric
+Historical Labs (Numeric),prothrombintime_last,,Numeric
+Historical Labs (Numeric),ptt_last,,Numeric
+Historical Labs (Numeric),rbc_last,,Numeric
+Historical Labs (Numeric),rbc/hpf_last,,Numeric
+Historical Labs (Numeric),rdw_last,,Numeric
+Historical Labs (Numeric),sodium_last,,Numeric
+Historical Labs (Numeric),troponini(poc)_last,,Numeric
+Historical Labs (Numeric),troponint_last,,Numeric
+Historical Labs (Numeric),tsh_last,,Numeric
+Historical Labs (Numeric),wbc_last,,Numeric
+Historical Labs (Numeric),wbc/hpf_last,,Numeric
+Historical Labs (Numeric),absolutelymphocytecount_min,,Numeric
+Historical Labs (Numeric),acetonebld_min,,Numeric
+Historical Labs (Numeric),alanineaminotransferase(alt)_min,,Numeric
+Historical Labs (Numeric),albumin_min,,Numeric
+Historical Labs (Numeric),alkphos_min,,Numeric
+Historical Labs (Numeric),anc(absneutrophilcount)_min,,Numeric
+Historical Labs (Numeric),aniongap_min,,Numeric
+Historical Labs (Numeric),aspartateaminotransferase(ast)_min,,Numeric
+Historical Labs (Numeric),"b-typenatriureticpeptide,pro(probnp)_min",,Numeric
+Historical Labs (Numeric),baseexcess(poc)_min,,Numeric
+Historical Labs (Numeric),"baseexcess,venous(poc)_min",,Numeric
+Historical Labs (Numeric),basos_min,,Numeric
+Historical Labs (Numeric),basosabs_min,,Numeric
+Historical Labs (Numeric),"benzodiazepinesscreen,urine,noconf._min",,Numeric
+Historical Labs (Numeric),bilirubindirect_min,,Numeric
+Historical Labs (Numeric),bilirubintotal_min,,Numeric
+Historical Labs (Numeric),bun_min,,Numeric
+Historical Labs (Numeric),bun/creatratio_min,,Numeric
+Historical Labs (Numeric),calcium_min,,Numeric
+Historical Labs (Numeric),calculatedco2(poc)_min,,Numeric
+Historical Labs (Numeric),calculatedhco3(poc)i_min,,Numeric
+Historical Labs (Numeric),calculatedo2saturation(poc)_min,,Numeric
+Historical Labs (Numeric),chloride_min,,Numeric
+Historical Labs (Numeric),cktotal_min,,Numeric
+Historical Labs (Numeric),co2_min,,Numeric
+Historical Labs (Numeric),"co2calculated,venous(poc)_min",,Numeric
+Historical Labs (Numeric),"co2,poc_min",,Numeric
+Historical Labs (Numeric),creatinine_min,,Numeric
+Historical Labs (Numeric),d-dimer_min,,Numeric
+Historical Labs (Numeric),egfr_min,,Numeric
+Historical Labs (Numeric),egfr(nonafricanamerican)_min,,Numeric
+Historical Labs (Numeric),egfr(aframer)_min,,Numeric
+Historical Labs (Numeric),eos_min,,Numeric
+Historical Labs (Numeric),eosinoabs_min,,Numeric
+Historical Labs (Numeric),epithelialcells_min,,Numeric
+Historical Labs (Numeric),globulin_min,,Numeric
+Historical Labs (Numeric),glucose_min,,Numeric
+Historical Labs (Numeric),"glucose,meter_min",,Numeric
+Historical Labs (Numeric),"hco3calculated,venous(poc)_min",,Numeric
+Historical Labs (Numeric),hematocrit_min,,Numeric
+Historical Labs (Numeric),hemoglobin_min,,Numeric
+Historical Labs (Numeric),immaturegrans(abs)_min,,Numeric
+Historical Labs (Numeric),immaturegranulocytes_min,,Numeric
+Historical Labs (Numeric),inr_min,,Numeric
+Historical Labs (Numeric),"lactate,poc_min",,Numeric
+Historical Labs (Numeric),lipase_min,,Numeric
+Historical Labs (Numeric),lymphs_min,,Numeric
+Historical Labs (Numeric),magnesium_min,,Numeric
+Historical Labs (Numeric),mch_min,,Numeric
+Historical Labs (Numeric),mchc_min,,Numeric
+Historical Labs (Numeric),mcv_min,,Numeric
+Historical Labs (Numeric),monocytes_min,,Numeric
+Historical Labs (Numeric),monosabs_min,,Numeric
+Historical Labs (Numeric),mpv_min,,Numeric
+Historical Labs (Numeric),neutrophils_min,,Numeric
+Historical Labs (Numeric),nrbc_min,,Numeric
+Historical Labs (Numeric),nrbcabsolute_min,,Numeric
+Historical Labs (Numeric),"o2satcalculated,venous(poc)_min",,Numeric
+Historical Labs (Numeric),pco2(poc)_min,,Numeric
+Historical Labs (Numeric),"pco2,venous(poc)_min",,Numeric
+Historical Labs (Numeric),"ph,venous(poc)_min",,Numeric
+Historical Labs (Numeric),"phencyclidine(pcp)screen,urine,noconf._min",,Numeric
+Historical Labs (Numeric),phosphorus_min,,Numeric
+Historical Labs (Numeric),platelets_min,,Numeric
+Historical Labs (Numeric),po2(poc)_min,,Numeric
+Historical Labs (Numeric),"po2,venous(poc)_min",,Numeric
+Historical Labs (Numeric),pocbun_min,,Numeric
+Historical Labs (Numeric),poccreatinine_min,,Numeric
+Historical Labs (Numeric),pocglucose_min,,Numeric
+Historical Labs (Numeric),pochematocrit_min,,Numeric
+Historical Labs (Numeric),pocionizedcalcium_min,,Numeric
+Historical Labs (Numeric),pocph_min,,Numeric
+Historical Labs (Numeric),pocpotassium_min,,Numeric
+Historical Labs (Numeric),pocsodium_min,,Numeric
+Historical Labs (Numeric),poctroponini._min,,Numeric
+Historical Labs (Numeric),potassium_min,,Numeric
+Historical Labs (Numeric),proteintotal_min,,Numeric
+Historical Labs (Numeric),prothrombintime_min,,Numeric
+Historical Labs (Numeric),ptt_min,,Numeric
+Historical Labs (Numeric),rbc_min,,Numeric
+Historical Labs (Numeric),rbc/hpf_min,,Numeric
+Historical Labs (Numeric),rdw_min,,Numeric
+Historical Labs (Numeric),sodium_min,,Numeric
+Historical Labs (Numeric),troponini(poc)_min,,Numeric
+Historical Labs (Numeric),troponint_min,,Numeric
+Historical Labs (Numeric),tsh_min,,Numeric
+Historical Labs (Numeric),wbc_min,,Numeric
+Historical Labs (Numeric),wbc/hpf_min,,Numeric
+Historical Labs (Numeric),absolutelymphocytecount_max,,Numeric
+Historical Labs (Numeric),acetonebld_max,,Numeric
+Historical Labs (Numeric),alanineaminotransferase(alt)_max,,Numeric
+Historical Labs (Numeric),albumin_max,,Numeric
+Historical Labs (Numeric),alkphos_max,,Numeric
+Historical Labs (Numeric),anc(absneutrophilcount)_max,,Numeric
+Historical Labs (Numeric),aniongap_max,,Numeric
+Historical Labs (Numeric),aspartateaminotransferase(ast)_max,,Numeric
+Historical Labs (Numeric),"b-typenatriureticpeptide,pro(probnp)_max",,Numeric
+Historical Labs (Numeric),baseexcess(poc)_max,,Numeric
+Historical Labs (Numeric),"baseexcess,venous(poc)_max",,Numeric
+Historical Labs (Numeric),basos_max,,Numeric
+Historical Labs (Numeric),basosabs_max,,Numeric
+Historical Labs (Numeric),"benzodiazepinesscreen,urine,noconf._max",,Numeric
+Historical Labs (Numeric),bilirubindirect_max,,Numeric
+Historical Labs (Numeric),bilirubintotal_max,,Numeric
+Historical Labs (Numeric),bun_max,,Numeric
+Historical Labs (Numeric),bun/creatratio_max,,Numeric
+Historical Labs (Numeric),calcium_max,,Numeric
+Historical Labs (Numeric),calculatedco2(poc)_max,,Numeric
+Historical Labs (Numeric),calculatedhco3(poc)i_max,,Numeric
+Historical Labs (Numeric),calculatedo2saturation(poc)_max,,Numeric
+Historical Labs (Numeric),chloride_max,,Numeric
+Historical Labs (Numeric),cktotal_max,,Numeric
+Historical Labs (Numeric),co2_max,,Numeric
+Historical Labs (Numeric),"co2calculated,venous(poc)_max",,Numeric
+Historical Labs (Numeric),"co2,poc_max",,Numeric
+Historical Labs (Numeric),creatinine_max,,Numeric
+Historical Labs (Numeric),d-dimer_max,,Numeric
+Historical Labs (Numeric),egfr_max,,Numeric
+Historical Labs (Numeric),egfr(nonafricanamerican)_max,,Numeric
+Historical Labs (Numeric),egfr(aframer)_max,,Numeric
+Historical Labs (Numeric),eos_max,,Numeric
+Historical Labs (Numeric),eosinoabs_max,,Numeric
+Historical Labs (Numeric),epithelialcells_max,,Numeric
+Historical Labs (Numeric),globulin_max,,Numeric
+Historical Labs (Numeric),glucose_max,,Numeric
+Historical Labs (Numeric),"glucose,meter_max",,Numeric
+Historical Labs (Numeric),"hco3calculated,venous(poc)_max",,Numeric
+Historical Labs (Numeric),hematocrit_max,,Numeric
+Historical Labs (Numeric),hemoglobin_max,,Numeric
+Historical Labs (Numeric),immaturegrans(abs)_max,,Numeric
+Historical Labs (Numeric),immaturegranulocytes_max,,Numeric
+Historical Labs (Numeric),inr_max,,Numeric
+Historical Labs (Numeric),"lactate,poc_max",,Numeric
+Historical Labs (Numeric),lipase_max,,Numeric
+Historical Labs (Numeric),lymphs_max,,Numeric
+Historical Labs (Numeric),magnesium_max,,Numeric
+Historical Labs (Numeric),mch_max,,Numeric
+Historical Labs (Numeric),mchc_max,,Numeric
+Historical Labs (Numeric),mcv_max,,Numeric
+Historical Labs (Numeric),monocytes_max,,Numeric
+Historical Labs (Numeric),monosabs_max,,Numeric
+Historical Labs (Numeric),mpv_max,,Numeric
+Historical Labs (Numeric),neutrophils_max,,Numeric
+Historical Labs (Numeric),nrbc_max,,Numeric
+Historical Labs (Numeric),nrbcabsolute_max,,Numeric
+Historical Labs (Numeric),"o2satcalculated,venous(poc)_max",,Numeric
+Historical Labs (Numeric),pco2(poc)_max,,Numeric
+Historical Labs (Numeric),"pco2,venous(poc)_max",,Numeric
+Historical Labs (Numeric),"ph,venous(poc)_max",,Numeric
+Historical Labs (Numeric),"phencyclidine(pcp)screen,urine,noconf._max",,Numeric
+Historical Labs (Numeric),phosphorus_max,,Numeric
+Historical Labs (Numeric),platelets_max,,Numeric
+Historical Labs (Numeric),po2(poc)_max,,Numeric
+Historical Labs (Numeric),"po2,venous(poc)_max",,Numeric
+Historical Labs (Numeric),pocbun_max,,Numeric
+Historical Labs (Numeric),poccreatinine_max,,Numeric
+Historical Labs (Numeric),pocglucose_max,,Numeric
+Historical Labs (Numeric),pochematocrit_max,,Numeric
+Historical Labs (Numeric),pocionizedcalcium_max,,Numeric
+Historical Labs (Numeric),pocph_max,,Numeric
+Historical Labs (Numeric),pocpotassium_max,,Numeric
+Historical Labs (Numeric),pocsodium_max,,Numeric
+Historical Labs (Numeric),poctroponini._max,,Numeric
+Historical Labs (Numeric),potassium_max,,Numeric
+Historical Labs (Numeric),proteintotal_max,,Numeric
+Historical Labs (Numeric),prothrombintime_max,,Numeric
+Historical Labs (Numeric),ptt_max,,Numeric
+Historical Labs (Numeric),rbc_max,,Numeric
+Historical Labs (Numeric),rbc/hpf_max,,Numeric
+Historical Labs (Numeric),rdw_max,,Numeric
+Historical Labs (Numeric),sodium_max,,Numeric
+Historical Labs (Numeric),troponini(poc)_max,,Numeric
+Historical Labs (Numeric),troponint_max,,Numeric
+Historical Labs (Numeric),tsh_max,,Numeric
+Historical Labs (Numeric),wbc_max,,Numeric
+Historical Labs (Numeric),wbc/hpf_max,,Numeric
+Historical Labs (Numeric),absolutelymphocytecount_median,,Numeric
+Historical Labs (Numeric),acetonebld_median,,Numeric
+Historical Labs (Numeric),alanineaminotransferase(alt)_median,,Numeric
+Historical Labs (Numeric),albumin_median,,Numeric
+Historical Labs (Numeric),alkphos_median,,Numeric
+Historical Labs (Numeric),anc(absneutrophilcount)_median,,Numeric
+Historical Labs (Numeric),aniongap_median,,Numeric
+Historical Labs (Numeric),aspartateaminotransferase(ast)_median,,Numeric
+Historical Labs (Numeric),"b-typenatriureticpeptide,pro(probnp)_median",,Numeric
+Historical Labs (Numeric),baseexcess(poc)_median,,Numeric
+Historical Labs (Numeric),"baseexcess,venous(poc)_median",,Numeric
+Historical Labs (Numeric),basos_median,,Numeric
+Historical Labs (Numeric),basosabs_median,,Numeric
+Historical Labs (Numeric),"benzodiazepinesscreen,urine,noconf._median",,Numeric
+Historical Labs (Numeric),bilirubindirect_median,,Numeric
+Historical Labs (Numeric),bilirubintotal_median,,Numeric
+Historical Labs (Numeric),bun_median,,Numeric
+Historical Labs (Numeric),bun/creatratio_median,,Numeric
+Historical Labs (Numeric),calcium_median,,Numeric
+Historical Labs (Numeric),calculatedco2(poc)_median,,Numeric
+Historical Labs (Numeric),calculatedhco3(poc)i_median,,Numeric
+Historical Labs (Numeric),calculatedo2saturation(poc)_median,,Numeric
+Historical Labs (Numeric),chloride_median,,Numeric
+Historical Labs (Numeric),cktotal_median,,Numeric
+Historical Labs (Numeric),co2_median,,Numeric
+Historical Labs (Numeric),"co2calculated,venous(poc)_median",,Numeric
+Historical Labs (Numeric),"co2,poc_median",,Numeric
+Historical Labs (Numeric),creatinine_median,,Numeric
+Historical Labs (Numeric),d-dimer_median,,Numeric
+Historical Labs (Numeric),egfr_median,,Numeric
+Historical Labs (Numeric),egfr(nonafricanamerican)_median,,Numeric
+Historical Labs (Numeric),egfr(aframer)_median,,Numeric
+Historical Labs (Numeric),eos_median,,Numeric
+Historical Labs (Numeric),eosinoabs_median,,Numeric
+Historical Labs (Numeric),epithelialcells_median,,Numeric
+Historical Labs (Numeric),globulin_median,,Numeric
+Historical Labs (Numeric),glucose_median,,Numeric
+Historical Labs (Numeric),"glucose,meter_median",,Numeric
+Historical Labs (Numeric),"hco3calculated,venous(poc)_median",,Numeric
+Historical Labs (Numeric),hematocrit_median,,Numeric
+Historical Labs (Numeric),hemoglobin_median,,Numeric
+Historical Labs (Numeric),immaturegrans(abs)_median,,Numeric
+Historical Labs (Numeric),immaturegranulocytes_median,,Numeric
+Historical Labs (Numeric),inr_median,,Numeric
+Historical Labs (Numeric),"lactate,poc_median",,Numeric
+Historical Labs (Numeric),lipase_median,,Numeric
+Historical Labs (Numeric),lymphs_median,,Numeric
+Historical Labs (Numeric),magnesium_median,,Numeric
+Historical Labs (Numeric),mch_median,,Numeric
+Historical Labs (Numeric),mchc_median,,Numeric
+Historical Labs (Numeric),mcv_median,,Numeric
+Historical Labs (Numeric),monocytes_median,,Numeric
+Historical Labs (Numeric),monosabs_median,,Numeric
+Historical Labs (Numeric),mpv_median,,Numeric
+Historical Labs (Numeric),neutrophils_median,,Numeric
+Historical Labs (Numeric),nrbc_median,,Numeric
+Historical Labs (Numeric),nrbcabsolute_median,,Numeric
+Historical Labs (Numeric),"o2satcalculated,venous(poc)_median",,Numeric
+Historical Labs (Numeric),pco2(poc)_median,,Numeric
+Historical Labs (Numeric),"pco2,venous(poc)_median",,Numeric
+Historical Labs (Numeric),"ph,venous(poc)_median",,Numeric
+Historical Labs (Numeric),"phencyclidine(pcp)screen,urine,noconf._median",,Numeric
+Historical Labs (Numeric),phosphorus_median,,Numeric
+Historical Labs (Numeric),platelets_median,,Numeric
+Historical Labs (Numeric),po2(poc)_median,,Numeric
+Historical Labs (Numeric),"po2,venous(poc)_median",,Numeric
+Historical Labs (Numeric),pocbun_median,,Numeric
+Historical Labs (Numeric),poccreatinine_median,,Numeric
+Historical Labs (Numeric),pocglucose_median,,Numeric
+Historical Labs (Numeric),pochematocrit_median,,Numeric
+Historical Labs (Numeric),pocionizedcalcium_median,,Numeric
+Historical Labs (Numeric),pocph_median,,Numeric
+Historical Labs (Numeric),pocpotassium_median,,Numeric
+Historical Labs (Numeric),pocsodium_median,,Numeric
+Historical Labs (Numeric),poctroponini._median,,Numeric
+Historical Labs (Numeric),potassium_median,,Numeric
+Historical Labs (Numeric),proteintotal_median,,Numeric
+Historical Labs (Numeric),prothrombintime_median,,Numeric
+Historical Labs (Numeric),ptt_median,,Numeric
+Historical Labs (Numeric),rbc_median,,Numeric
+Historical Labs (Numeric),rbc/hpf_median,,Numeric
+Historical Labs (Numeric),rdw_median,,Numeric
+Historical Labs (Numeric),sodium_median,,Numeric
+Historical Labs (Numeric),troponini(poc)_median,,Numeric
+Historical Labs (Numeric),troponint_median,,Numeric
+Historical Labs (Numeric),tsh_median,,Numeric
+Historical Labs (Numeric),wbc_median,,Numeric
+Historical Labs (Numeric),wbc/hpf_median,,Numeric
+Historical Labs (Categorical),bloodua_last,"The last value, number of positive results, and total number of tests ordered for selected categorical labs ordered in the ED within one year of the current visit ",Binary
+Historical Labs (Categorical),glucoseua_last,,Binary
+Historical Labs (Categorical),ketonesua_last,,Binary
+Historical Labs (Categorical),leukocytesua_last,,Binary
+Historical Labs (Categorical),nitriteua_last,,Binary
+Historical Labs (Categorical),pregtestur_last,,Binary
+Historical Labs (Categorical),proteinua_last,,Binary
+Historical Labs (Categorical),"bloodculture,routine_last",,Binary
+Historical Labs (Categorical),"urineculture,routine_last",,Binary
+Historical Labs (Categorical),bloodua_npos,,Numeric
+Historical Labs (Categorical),glucoseua_npos,,Numeric
+Historical Labs (Categorical),ketonesua_npos,,Numeric
+Historical Labs (Categorical),leukocytesua_npos,,Numeric
+Historical Labs (Categorical),nitriteua_npos,,Numeric
+Historical Labs (Categorical),pregtestur_npos,,Numeric
+Historical Labs (Categorical),proteinua_npos,,Numeric
+Historical Labs (Categorical),"bloodculture,routine_npos",,Numeric
+Historical Labs (Categorical),"urineculture,routine_npos",,Numeric
+Historical Labs (Categorical),bloodua_count,,Numeric
+Historical Labs (Categorical),glucoseua_count,,Numeric
+Historical Labs (Categorical),ketonesua_count,,Numeric
+Historical Labs (Categorical),leukocytesua_count,,Numeric
+Historical Labs (Categorical),nitriteua_count,,Numeric
+Historical Labs (Categorical),pregtestur_count,,Numeric
+Historical Labs (Categorical),proteinua_count,,Numeric
+Historical Labs (Categorical),"bloodculture,routine_count",,Numeric
+Historical Labs (Categorical),"urineculture,routine_count",,Numeric
